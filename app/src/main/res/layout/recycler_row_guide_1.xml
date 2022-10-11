@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+            <variable
+                name="guideRow1"
+                type="com.example.fmsspatikabitirme.model.TravelAppModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/component_1"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="16dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            tools:src="@drawable/homebackground1"
+            android:id="@+id/guide_mightimg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:loadImage='@{guideRow1.images[0].url}'
+            />
+
+        <TextView
+            tools:text="aklsdnfmklasmdflk"
+            android:id="@+id/safe_travel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:text="@{guideRow1.title}"
+            android:textAppearance="@style/safe_travel"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+    </com.google.android.material.card.MaterialCardView>
+</layout>

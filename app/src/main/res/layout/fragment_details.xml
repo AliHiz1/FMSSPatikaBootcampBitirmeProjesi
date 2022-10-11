@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detailRow"
+            type="com.example.fmsspatikabitirme.model.TravelAppModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.x.details.DetailsFragment">
+
+        <RelativeLayout
+            android:id="@+id/details_card_rl"
+            android:layout_width="match_parent"
+            android:layout_height="456dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/details_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="32dp">
+
+                <ImageView
+                    android:id="@+id/details_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:loadImage="@{detailRow.images[0].url}" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_card_rl">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/place_info"
+                android:layout_width="225dp"
+                android:layout_height="62dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/place_info_name"
+                    android:layout_width="225dp"
+                    android:layout_height="38dp"
+                    android:text="@{detailRow.title}"
+                    android:textAppearance="@style/detail_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/place_info_rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/place_info_name"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/place_info_name"
+                    android:layout_marginEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/place_name_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/detail_loc_icon"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/place_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{detailRow.city}"
+                    android:textAppearance="@style/bali_indone"
+                    app:layout_constraintTop_toBottomOf="@id/place_info_name"
+                    app:layout_constraintStart_toEndOf="@id/place_info_rl2"/>
+                <TextView
+                    android:id="@+id/place_loc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{detailRow.country}"
+                    android:textAppearance="@style/bali_indone"
+                    app:layout_constraintTop_toBottomOf="@id/place_info_name"
+                    app:layout_constraintStart_toEndOf="@id/place_loc"
+                    android:layout_marginStart="5dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/place_info"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+            <TextView
+                android:id="@+id/place_destin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@{detailRow.description}"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/detail_button"
+            android:layout_width="309dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/detail_button_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/add_bookmar"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/detail_button"
+            android:layout_alignTop="@+id/detail_button"
+            android:layout_alignEnd="@+id/detail_button"
+            android:text="Add Bookmark"
+            android:textAlignment="center"
+            android:textAppearance="@style/add_bookmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="24.5dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

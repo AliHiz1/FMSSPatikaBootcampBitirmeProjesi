@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="banner_head">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="android:textFontWeight">
+            700
+        </item>
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+
+    </style>
+
+    <style name="deals_txt">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="android:textFontWeight">
+            600
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="lineHeight">
+            25.14dp
+        </item>
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+        <item name="android:textColor">
+            #181A25
+        </item>
+
+    </style>
+
+    <style name="all">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            #C2C5D6
+        </item>
+        <item name="android:textFontWeight">
+            700
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="search">
+
+        <item name="android:textSize">
+            30sp
+        </item>
+
+        <item name="android:textColor">
+            #292C3D
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="lineHeight">
+            37.71dp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="flights_butt">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="flow_horizontalAlign">
+            center
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="trip_plan">
+
+        <item name="android:textSize">
+            30sp
+        </item>
+
+        <item name="android:textColor">
+            #292C3D
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="android:fontWeight">
+            700
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="triptrips">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="android:textColor">
+            #FF4760
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="trip_text1">
+
+        <item name="android:textSize">
+            25sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+    </style>
+
+    <style name="trip_text2">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+    </style>
+
+    <style name="recyclerrowtriptxt1">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+    </style>
+
+    <style name="top_destina">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            #292C3D
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+
+    </style>
+
+    <style name="search_row1_txt1">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+    </style>
+
+    <style name="search_row1_txt2">
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+    </style>
+
+    <style name="hotel">
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+        <item name="lineHeight">
+            17.6px
+        </item>
+        <item name="android:capitalize">
+            characters
+        </item>
+        <item name="android:textAlignment">
+            center
+        </item>
+    </style>
+
+    <style name="search_row2_txt1">
+        <item name="android:textSize">
+            25sp
+        </item>
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="android:textAlignment">
+            center
+        </item>
+    </style>
+
+    <style name="search_row2_txt2">
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+        <item name="android:textAlignment">
+            center
+        </item>
+    </style>
+
+    <style name="might_need_">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+
+        <item name="android:textColor">
+            #292C3D
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+
+    </style>
+
+    <style name="see_all">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #FF4760
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+        <item name="lineHeight">
+            17.6sp
+        </item>
+
+    </style>
+
+    <style name="safe_travel">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #FCFCFD
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="lineHeight">
+            23sp
+        </item>
+
+    </style>
+
+    <style name="categories">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            #0048F0
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+    </style>
+
+    <style name="top_pick_ar">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+
+        <item name="android:textColor">
+            #292C3D
+        </item>
+        <item name="android:capitalize">
+            characters
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+
+    </style>
+
+    <style name="guide_rr3_category">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+
+        <item name="android:textColor">
+            #0048F0
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+        <item name="lineHeight">
+            17.6sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="guide_rr3_artic">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #181A25
+        </item>
+        <item name="fontFamily">
+            Source Sans Pro
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+        <item name="lineHeight">
+            22.63sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="trip_name"></style>
+
+    <style name="detail_name">
+        <item name="android:textSize">
+            28sp
+        </item>
+
+        <item name="android:textColor">
+            #0A2753
+        </item>
+        <item name="fontFamily">
+            Montserrat
+        </item>
+        <item name="fontWeight">
+            400
+        </item>
+        <item name="lineHeight">
+            37.8sp
+        </item>
+
+    </style>
+
+    <style name="bali_indone">
+
+        <item name="android:textSize">
+            15sp
+        </item>
+        <item name="android:textColor">
+            #39414B
+        </item>
+        <item name="fontFamily">
+            Montserrat
+        </item>
+        <item name="fontWeight">
+            300
+        </item>
+        <item name="lineHeight">
+            20.25sp
+        </item>
+    </style>
+
+    <style name="add_bookmar">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+        <item name="fontFamily">
+            Montserrat
+        </item>
+        <item name="fontWeight">
+            600
+        </item>
+        <item name="lineHeight">
+            24.8sp
+        </item>
+
+    </style>
+</resources>

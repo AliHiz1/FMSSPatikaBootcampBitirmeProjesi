@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.x.guide.GuideFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="58dp"
+            android:gravity="top"
+            android:text="@string/guide"
+            android:textAppearance="@style/search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/guide_tips"
+            android:layout_width="343dp"
+            android:layout_height="165dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TextView
+                android:id="@+id/might_need_"
+                android:layout_width="180dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:gravity="top"
+                android:text="@string/might_need_"
+                android:textAppearance="@style/might_need_" />
+
+            <TextView
+                android:id="@+id/see_all"
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:text="@string/see_all"
+                android:textAppearance="@style/see_all" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:listitem="@layout/recycler_row_guide_1"
+                android:id="@+id/guide_recycler_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/might_need_"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="343dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/search_bar"
+            android:hint="A country, a city, a place... or anything"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guide_tips"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/recycler_row_guide_2"
+            android:id="@+id/guide_recycler_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+        <RelativeLayout
+            android:id="@+id/guide_top"
+            android:layout_width="522dp"
+            android:layout_height="282dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guide_recycler_view_2">
+
+
+            <TextView
+                android:id="@+id/top_pick_ar"
+                android:layout_width="145dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="@string/top_pick_ar"
+                android:textAppearance="@style/top_pick_ar"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:listitem="@layout/recycler_row_guide_3"
+                android:id="@+id/guide_recycler_view_3"
+                android:layout_width="522dp"
+                android:layout_height="273dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="37dp"
+                android:clipToOutline="true"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.x.home.HomeFragment">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/unsplash_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/homebackground1" />
+
+            <TextView
+                android:id="@+id/banner_head"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="235dp"
+                android:gravity="top"
+                android:text="@string/banner_head"
+                android:textAppearance="@style/banner_head"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/banner_body"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/banner_head"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/banner_butt1"
+                    android:layout_width="64dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/banner_butt1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/homebannerbuttondraw"
+                        app:srcCompat="@drawable/homebannericon1">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                    <TextView
+                        android:id="@+id/flights_butt"
+                        android:layout_width="49dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/banner_butt1a"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/flights"
+                        android:textAppearance="@style/flights_butt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/banner_butt2"
+                    android:layout_width="64dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="116.67dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/banner_butt2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/homebannerbuttondraw"
+                        app:srcCompat="@drawable/homebannericon2">
+
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:id="@+id/hotels_butt"
+                        android:layout_width="49dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/banner_butt2a"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/hotels"
+                        android:textAppearance="@style/flights_butt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/banner_butt3"
+                    android:layout_width="64dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="213.33dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/banner_butt3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/homebannerbuttondraw"
+                        app:srcCompat="@drawable/homebannericon3">
+
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:id="@+id/cars_butt"
+                        android:layout_width="49dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/banner_butt3a"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/cars"
+                        android:textAppearance="@style/flights_butt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/banner_butt4"
+                    android:layout_width="64dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="310dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/banner_butt4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/homebannerbuttondraw"
+                        app:srcCompat="@drawable/homebannericon4">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:id="@+id/taxi_butt"
+                        android:layout_width="49dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/banner_butt4a"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/taxi"
+                        android:textAppearance="@style/flights_butt" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deals_txt"
+            android:layout_width="291dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:gravity="top"
+            android:text="@string/deals_txt"
+            android:textAppearance="@style/deals_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deals_txt"
+            app:tabSelectedTextColor="#FF4760"
+            app:tabTextColor="#C2C5D6"
+            app:tabIndicatorColor="#FF4760"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

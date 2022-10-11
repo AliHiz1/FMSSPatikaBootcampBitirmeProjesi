@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="tripRow1"
+            type="com.example.fmsspatikabitirme.model.TripAppModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/triprecyclerrow"
+        android:layout_width="358dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/trip_imgrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homebackground1"/>
+
+        <RelativeLayout
+            android:id="@+id/trip_destin"
+            android:layout_width="302dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/trip_text1"
+                android:layout_width="302dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="@{tripRow1.tripName}"
+                android:textAppearance="@style/trip_text1" />
+
+            <TextView
+                android:id="@+id/trip_text2"
+                android:layout_width="154dp"
+                android:layout_height="23dp"
+                android:layout_below="@+id/trip_text1"
+                android:gravity="center"
+                android:text="@{tripRow1.tripDate}"
+                android:textAppearance="@style/trip_text2"
+                android:layout_marginStart="74dp" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

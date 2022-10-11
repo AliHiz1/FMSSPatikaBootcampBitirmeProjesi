@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="searchRow2"
+            type="com.example.fmsspatikabitirme.model.TravelAppModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchrecyclerrow2"
+        android:layout_width="358dp"
+        android:layout_height="153dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/search_imgrow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:loadImage='@{searchRow2.images[0].url}'/>
+
+        <RelativeLayout
+            android:id="@+id/frame_21"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/frame_21">
+
+            <TextView
+                android:id="@+id/hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text='@{searchRow2.category}'
+                android:textAppearance="@style/hotel"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bookmark"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="314dp"
+            android:background="@drawable/search_bookmark_bg">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="19.2dp"
+                android:layout_height="19.2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6.4dp"
+                android:layout_marginTop="6.4dp"
+                android:layout_marginEnd="6.4dp"
+                android:layout_marginBottom="6.4dp"
+                android:background="@drawable/searchrow2icon"
+                android:clipToOutline="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_16"
+            android:layout_width="337dp"
+            android:layout_height="58dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="46dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/search_row2_txt1"
+                android:layout_width="337dp"
+                android:layout_height="31dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text='@{searchRow2.title}'
+                android:textAppearance="@style/search_row2_txt1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/search_row2_txt2"
+                android:layout_width="337dp"
+                android:layout_height="23dp"
+                android:layout_below="@+id/search_row2_txt1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text='@{searchRow2.country}'
+                android:textAppearance="@style/search_row2_txt2" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

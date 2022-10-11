@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FMSSPatikaBitirme</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_head">Where\'s your next destination?</string>
+    <string name="deals_txt">DEALS</string>
+    <string name="all">All</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="transport">Transportations</string>
+    <string name="search">Search</string>
+    <string name="taxi">Taxi</string>
+    <string name="cars">Cars</string>
+    <string name="trip_plan">Trip Plan</string>
+    <string name="triptrips">Trips</string>
+    <string name="tripbookmarks">Bookmarks</string>
+    <string name="trip_text1">Headline xxxxxxx</string>
+    <string name="trip_text2">Headline xxxxxxx</string>
+    <string name="recyclerrowtriptxt1">5 Items</string>
+    <string name="recyclerrowtriptxt2">5 Days Left</string>
+    <string name="top_destina">Top Destinations</string>
+    <string name="nearby_attr">Nearby Attractions</string>
+    <string name="search_row1_txt1">Tokyo</string>
+    <string name="search_row1_txt2">Japan</string>
+    <string name="hotel">HOTEL</string>
+    <string name="search_row2_txt1">Marina Bay</string>
+    <string name="search_row2_txt2">Singapore</string>
+    <string name="guide">Guide</string>
+    <string name="might_need_">MIGHT NEED THESE</string>
+    <string name="see_all">See all</string>
+    <string name="safe_travel">Bugdet Travel</string>
+    <string name="categories">Category</string>
+    <string name="top_pick_ar">TOP-PICKS-ARTICLES</string>
+    <string name="guide_rr3_category">EXPERIENCE</string>
+    <string name="guide_rr3_artic">Beautiful Alley Scene in Old Town in Europe at Sunset</string>
+</resources>

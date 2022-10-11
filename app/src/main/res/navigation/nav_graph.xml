@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tripFragment"
+            app:destination="@id/tripFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.trip.TripFragment"
+        android:label="fragment_trip"
+        tools:layout="@layout/fragment_trip" >
+        <action
+            android:id="@+id/action_tripFragment_to_addTripFragment"
+            app:destination="@id/addTripFragment" />
+        <action
+            android:id="@+id/action_tripFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_searchListFragment"
+            app:destination="@id/searchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.guide.GuideFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_guide" >
+        <action
+            android:id="@+id/action_guideFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_guideFragment_to_searchListFragment"
+            app:destination="@id/searchListFragment" />
+        <action
+            android:id="@+id/action_guideFragment_to_guideSearchFragment"
+            app:destination="@id/guideSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTripFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.trip.AddTripFragment"
+        android:label="fragment_add_trip"
+        tools:layout="@layout/fragment_add_trip" >
+        <action
+            android:id="@+id/action_addTripFragment_to_tripFragment"
+            app:destination="@id/tripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.details.DetailsFragment"
+        android:label="DetailsFragment" >
+        <argument
+            android:name="detailArg"
+            app:argType="com.example.fmsspatikabitirme.model.TravelAppModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchListFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.search.SearchListFragment"
+        android:label="SearchListFragment" >
+        <argument
+            android:name="argSearch"
+            app:argType="string"
+            android:defaultValue="Ali" />
+        <action
+            android:id="@+id/action_searchListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideSearchFragment"
+        android:name="com.example.fmsspatikabitirme.ui.x.guide.GuideSearchFragment"
+        android:label="GuideSearchFragment" >
+        <action
+            android:id="@+id/action_guideSearchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <argument
+            android:name="searchArgG"
+            app:argType="string"
+            android:defaultValue="ali" />
+    </fragment>
+</navigation>

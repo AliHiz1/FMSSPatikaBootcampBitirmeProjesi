@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="guideRow3"
+            type="com.example.fmsspatikabitirme.model.TravelAppModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/article_car"
+        android:layout_width="253dp"
+        android:layout_height="273dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:id="@+id/frame_32"
+            android:layout_width="253dp"
+            android:layout_height="161dp">
+
+            <ImageView
+                android:id="@+id/guide_top_pic_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:loadImage='@{guideRow3.images[0].url}'/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/guide_top_pic_imgbutt"
+                app:srcCompat="@drawable/tripbookmarksicon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_31"
+            android:layout_width="253dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="161dp">
+
+            <TextView
+                android:id="@+id/guide_rr3_category"
+                android:layout_width="135dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="86dp"
+                android:text="@{guideRow3.category}"
+                android:textAppearance="@style/guide_rr3_category"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/guide_rr3_artic"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:text="@{guideRow3.title}"
+                android:textAppearance="@style/guide_rr3_artic"
+                android:gravity="top" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
